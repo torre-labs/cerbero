@@ -4,7 +4,7 @@
       "vendor": "com.torrelabs",
       "name": "ApplicationStarted",
       "format": "jsonschema",
-      "version": "1-0-0"
+      "version": "3-0-0"
   },
   "description": "Schema for tracking the start of a job application made by the user.",
   "properties": {
@@ -13,9 +13,9 @@
           "type": "string",
           "maxLength": 50
       },
-      "userGgid": {
+      "userGgId": {
           "description": "GgId of the user that applied to the job post",
-          "type": "string",
+          "type": ["string", "null"],
           "maxLength": 50
       },
       "posterUserGgId": {
@@ -31,5 +31,5 @@
   },
   "additionalProperties": true,
   "type": "object",
-  "required": ["opportunityId", "userGgid"]
+  "required": ["opportunityId"]
 }
