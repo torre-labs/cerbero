@@ -2,11 +2,11 @@
     "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
     "self": {
         "vendor": "com.torrelabs",
-        "name": "TrailerDistribution",
+        "name": "FeatureFlagDistribution",
         "format": "jsonschema",
-        "version": "2-0-0"
+        "version": "1-0-0"
     },
-    "description": "Schema for tracking trailer experiment - only development",
+    "description": "Schema for tracking feature flags experiment",
     "properties": {
         "subjectId": {
             "description": "SubjectId of the user that enters the experiment",
