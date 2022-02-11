@@ -20,13 +20,13 @@
         },
         "emailNofiticationId": {
             "description": "Id of the email notification to track metrics",
-            "type": ["number"],
+            "type": ["number", "null"],
             "minimum": 0,
             "maximum": 1000000000000
         },
         "featureFlag": {
             "description": "Feature flag of the user that enters the experiment",
-            "type": ["string"],
+            "type": ["string", "null"],
             "maxLength": 50
         }
     },
