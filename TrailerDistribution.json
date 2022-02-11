@@ -1,0 +1,36 @@
+{
+    "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+    "self": {
+        "vendor": "com.torrelabs",
+        "name": "TrailerDistribution",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "description": "Schema for tracking trailer experiment",
+    "properties": {
+        "subjectId": {
+            "description": "SubjectId of the user that enters the experiment",
+            "type": ["string", "null"],
+            "maxLength": 50
+        },
+        "template": {
+            "description": "Template name used to send the email",
+            "type": "string",
+            "maxLength": 50
+        },
+        "emailNofiticationId": {
+            "description": "Id of the email notification to track metrics",
+            "type": ["number"],
+            "minimum": 0,
+            "maximum": 1000000000000
+        },
+        "featureFlag": {
+            "description": "Feature flag of the user that enters the experiment",
+            "type": ["string"],
+            "maxLength": 50
+        }
+    },
+    "additionalProperties": true,
+    "type": "object",
+    "required": ["subjectId"]
+}
