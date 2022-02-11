@@ -10,12 +10,12 @@
     "properties": {
         "subjectId": {
             "description": "SubjectId of the user that enters the experiment",
-            "type": ["string", "null"],
+            "type": "string",
             "maxLength": 50
         },
         "template": {
             "description": "Template name used to send the email",
-            "type": "string",
+            "type": ["string", "null"],
             "maxLength": 50
         },
         "emailNofiticationId": {
