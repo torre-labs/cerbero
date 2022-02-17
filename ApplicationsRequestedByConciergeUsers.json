@@ -1,0 +1,43 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "self": {
+    "vendor": "com.torrelabs",
+    "name": "ApplicationsRequestedByConciergeUsers",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "description": "Schema for tracking the use of applications requested by concierge users",
+  "properties": {
+    "ggId": {
+      "description": "ggId of the user that request an application",
+      "type": "string",
+      "maxLength": 50
+    },
+    "opportunityId": {
+      "description": "Id of the opportunity to which the user wants apply",
+      "type": "string",
+      "maxLength": 50
+    },
+    "buttonName": {
+      "description": "Name of the button clicked",
+      "type": "string",
+      "maxLength": 50
+    },
+    "buttonLocation": {
+      "description": "Location of the button clicked",
+      "type": "string",
+      "maxLength": 100
+    },
+    "isCrawled": {
+      "description": "Flag to indicate if the opportunity is crawled",
+      "type": "boolean"
+    },
+    "isConciergeSubscriber" : {
+      "description": "Flag to indicate if the user is a concierge subscriber",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true,
+  "type": "object",
+  "required": ["ggId", "opportunityId", "buttonName", "buttonLocation", "isCrawled", "isConciergeSubscriber"]
+}
