@@ -4,7 +4,7 @@
     "vendor": "com.torrelabs",
     "name": "CompatibilityReports",
     "format": "jsonschema",
-    "version": "1-0-1"
+    "version": "2-0-0"
   },
   "description": "Compatibility reports",
   "properties": {
@@ -17,37 +17,74 @@
     "userPublicId": {
       "description": "Public id of the user",
       "type": [
-            "string",
-            "null"
-        ]
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 500
     },
-    "targetPublicId": {
-      "description": "Public id of the target",
-      "type": "string"
+    "targetId": {
+      "description": "Id of the target",
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 500
     },
-    "sourcePublicId": {
-      "description": "Public id of the source",
-      "type": "string"
+    "sourceId": {
+      "description": "Id of the source",
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 500
     },
     "targetEntityType": {
       "description": "Entity type of the target",
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 500
     },
     "sourceEntityType": {
       "description": "Entity type of the source",
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 500
     },
     "url": {
       "description": "Full url",
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 500
     },
     "testType": {
       "description": "Behavioral test type",
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 500
     },
     "context": {
       "description": "Additional data of the tracking",
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 500
     }
   },
   "additionalProperties": true,
