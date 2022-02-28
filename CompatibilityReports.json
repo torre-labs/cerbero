@@ -4,7 +4,7 @@
     "vendor": "com.torrelabs",
     "name": "CompatibilityReports",
     "format": "jsonschema",
-    "version": "1-0-0"
+    "version": "1-0-1"
   },
   "description": "Compatibility reports",
   "properties": {
@@ -29,12 +29,24 @@
       "description": "Public id of the source",
       "type": "string"
     },
+    "targetEntityType": {
+      "description": "Entity type of the target",
+      "type": "string"
+    },
+    "sourceEntityType": {
+      "description": "Entity type of the source",
+      "type": "string"
+    },
     "url": {
       "description": "Full url",
       "type": "string"
     },
     "testType": {
       "description": "Behavioral test type",
+      "type": "string"
+    },
+    "context": {
+      "description": "Additional data of the tracking",
       "type": "string"
     }
   },
