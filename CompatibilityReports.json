@@ -1,0 +1,46 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "self": {
+    "vendor": "com.torrelabs",
+    "name": "CompatibilityReports",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "description": "Compatibility reports",
+  "properties": {
+    "event": {
+      "description": "Type of compatibility reports event",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "userPublicId": {
+      "description": "Public id of the user",
+      "type": [
+            "string",
+            "null"
+        ]
+    },
+    "targetPublicId": {
+      "description": "Public id of the target",
+      "type": "string"
+    },
+    "sourcePublicId": {
+      "description": "Public id of the source",
+      "type": "string"
+    },
+    "url": {
+      "description": "Full url",
+      "type": "string"
+    },
+    "testType": {
+      "description": "Behavioral test type",
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "type": "object",
+  "required": [
+    "event"
+  ]
+}
