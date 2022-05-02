@@ -11,12 +11,14 @@
         "subjectId": {
             "description": "User shared id",
             "type": "integer",
-            "minimum": 0
+            "minimum": 0,
+            "maximum": 1000000000000
         },
         "opportunityId": {
             "description": "Numeric Id of the opportunity",
             "type": "integer",
-            "minimum": 0
+            "minimum": 0,
+            "maximum": 1000000000000
         },
         "trackerLocation": {
             "description": "File location of the tracker",
