@@ -1,0 +1,58 @@
+{
+    "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+    "self": {
+        "vendor": "com.torrelabs",
+        "name": "UserSignUp",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "description": "Schema for users signup event",
+    "properties": {
+        "email": {
+            "description": "Registered email of the user",
+            "type": "string",
+            "maxLength": 420
+        },
+        "phone": {
+            "description": "Registered phone of the user",
+            "type": [
+                "string",
+                "null"
+            ],
+            "maxLength": 210
+        },
+        "name": {
+            "description": "Full name of the user",
+            "type": "string",
+            "maxLength": 420
+        },
+        "subjectIdentifier": {
+            "description": "Subject Identifier of the user",
+            "type": "string",
+            "maxLength": 210
+        },
+        "headline": {
+            "description": "Professional headline registered by the user",
+            "type": [
+                "string",
+                "null"
+            ],
+            "maxLength": 210
+        },
+        "referrerTrackingId": {
+            "description": "Id of the user who created the link that referred this new user",
+            "type": [
+                "string",
+                "null"
+            ],
+            "maxLength": 420
+        }
+    },
+    "additionalProperties": true,
+    "type": "object",
+    "required": [
+        "email",
+        "name",
+        "subjectIdentifier"
+    ]
+}
