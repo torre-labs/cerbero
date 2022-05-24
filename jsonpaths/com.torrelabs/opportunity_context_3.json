@@ -1,0 +1,30 @@
+{
+    "jsonpaths": [
+        "$.schema.vendor",
+        "$.schema.name",
+        "$.schema.format",
+        "$.schema.version",
+        "$.hierarchy.rootId",
+        "$.hierarchy.rootTstamp",
+        "$.hierarchy.refRoot",
+        "$.hierarchy.refTree",
+        "$.hierarchy.refParent",
+        "$.data.id",
+        "$.data.compensationValue",
+        "$.data.compensationVisible",
+        "$.data.completion",
+        "$.data.crawled",
+        "$.data.created",
+        "$.data.deadline",
+        "$.data.externalApplicationUrl",
+        "$.data.externalInfoSourceUrl",
+        "$.data.locale",
+        "$.data.objective",
+        "$.data.opportunity",
+        "$.data.ownerGgId",
+        "$.data.periodicity",
+        "$.data.stableOn",
+        "$.data.status",
+        "$.data.theme"
+    ]
+}

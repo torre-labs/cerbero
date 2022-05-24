@@ -1,0 +1,149 @@
+{
+  "description" : "Context for the opportunity",
+  "properties" : {
+    "id" : {
+      "description" : "Id of the opportunity",
+      "type" : "string",
+      "maxLength" : 20
+    },
+    "ownerGgId" : {
+      "description" : "GgId of the user that posted the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 10
+    },
+    "opportunity" : {
+      "description" : "Name of the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 500
+    },
+    "objective" : {
+      "description" : "Objective of the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 500
+    },
+    "theme" : {
+      "description" : "Theme of the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 50
+    },
+    "completion" : {
+      "description" : "Completion rate of the opportunity",
+      "type" : [
+        "number",
+        "null"
+      ],
+      "minimum" : 0,
+      "maximum" : 10
+    },
+    "compensationValue" : {
+      "description" : "Compensation value of the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 100
+    },
+    "compensationVisible" : {
+      "description" : "Is the compensation visible",
+      "type" : [
+        "boolean",
+        "null"
+      ]
+    },
+    "periodicity" : {
+      "description" : "Periodicity of the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 50
+    },
+    "created" : {
+      "description" : "Date of the creation of the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 50
+    },
+    "deadline" : {
+      "description" : "Date of the deadline of the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 50
+    },
+    "stableOn" : {
+      "description" : "StableOn property",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 50
+    },
+    "externalApplicationUrl" : {
+      "description" : "Url of the external application",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 4000
+    },
+    "externalInfoSourceUrl" : {
+      "description" : "Url of the external info source of the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 4000
+    },
+    "crawled" : {
+      "description" : "If the opportunity is a crawled one",
+      "type" : [
+        "boolean",
+        "null"
+      ]
+    },
+    "status" : {
+      "description" : "Status of the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 50
+    },
+    "locale" : {
+      "description" : "Locale property of the opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 400
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "id"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "OpportunityContext",
+    "format" : "jsonschema",
+    "version" : "3-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}
