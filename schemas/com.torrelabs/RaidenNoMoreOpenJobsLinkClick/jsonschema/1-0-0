@@ -1,0 +1,74 @@
+{
+  "description": "Schema for sign in from discovery",
+  "properties": {
+    "trackerLocation": {
+      "description": "File location of the tracker",
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 50
+    },
+    "subjectId": {
+      "description": "User shared id",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 10000000000
+    },
+    "id": {
+      "description": "User's id",
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 20
+    },
+    "username": {
+      "description": "User's username",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120
+    },
+    "email": {
+      "description": "Email of registered user",
+      "type": "string",
+      "maxLength": 120
+    },
+    "isTester": {
+      "description": "Tells if the user is test or not",
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "clickedAt": {
+      "description": "Tells the time at when the user clicked on the link",
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 50
+    },
+    "openJobs": {
+      "description": "Tells the amount of openJobs for the search that user made",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9999999
+    }
+  },
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "trackerLocation",
+    "subjectId",
+    "id",
+    "username",
+    "email",
+    "clickedAt",
+    "openJobs"
+  ],
+  "self": {
+    "vendor": "com.torrelabs",
+    "name": "RaidenNoMoreOpenJobsLinkClick",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}
