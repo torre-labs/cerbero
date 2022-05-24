@@ -1,0 +1,31 @@
+{
+  "description" : "Schema for tracking the redirection of a crawled flexible job application.",
+  "properties" : {
+    "trackingId" : {
+      "description" : "Tracking id of the opportunity the user applied",
+      "type" : "integer",
+      "minimum" : 0,
+      "maximum" : 1000000000
+    },
+    "userGgid" : {
+      "description" : "GgId of the user that applied to the job post",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 50
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "trackingId"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "RedirectCrawledFlexFix",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}
