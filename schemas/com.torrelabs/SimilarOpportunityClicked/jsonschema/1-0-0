@@ -1,0 +1,46 @@
+{
+  "description": "Schema for tracking clicks on similar opportunities",
+  "properties": {
+    "elementType": {
+      "type": "string",
+      "description": "type of the clicked element",
+      "maxLength": 400
+    },
+    "subjectId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "subject id of the user who clicked the element",
+      "maxLength": 400
+    },
+    "opportunityId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "opportunity related to clicked similar opportunity",
+      "maxLength": 400
+    },
+    "clickedOpportunityId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "silimar clicked opportunity id",
+      "maxLength": 400
+    }
+  },
+  "additionalProperties": true,
+  "type": "object",
+  "required": [
+    "elementType"
+  ],
+  "self": {
+    "vendor": "com.torrelabs",
+    "name": "SimilarOpportunityClicked",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}
