@@ -3,13 +3,13 @@
   "properties" : {
     "subjectId" : {
       "description": "",
-      "type" : "integer",
+      "type" : ["integer", "null"],
       "minimum": 0,
       "maximum": 10000000
     },
     "isTester" : {
       "description": "",
-      "type" : "boolean"
+      "type" : ["boolean", "null"]
     },
     "itemType" : {
       "description": "",
