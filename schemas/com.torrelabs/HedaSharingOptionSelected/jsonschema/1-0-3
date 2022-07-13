@@ -1,107 +1,155 @@
 {
-  "description" : "Schema for an API Call event",
-  "properties" : {
-    "contextPageTitle" : {
+  "description": "Schema for an API Call event",
+  "properties": {
+    "contextPageTitle": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "email" : {
+    "email": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "eventName" : {
+    "eventName": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "href" : {
+    "href": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "isMobile" : {
+    "isMobile": {
       "description": "",
-      "type" : "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
-    "isTester" : {
+    "isTester": {
       "description": "",
-      "type" : "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
-    "origin" : {
+    "origin": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "pathname" : {
+    "pathname": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "port" : {
+    "port": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "protocol" : {
+    "protocol": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "publicId" : {
+    "publicId": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "search" : {
+    "search": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "sendAt" : {
+    "sendAt": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "subjectId" : {
+    "subjectId": {
       "description": "",
-      "type" : "integer",
+      "type": [
+        "integer",
+        "null"
+      ],
       "minimum": 0,
       "maximum": 10000000
     },
-    "userAgent" : {
+    "userAgent": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "label" : {
+    "label": {
       "description": "",
-      "type" : "string",
+      "type": "string",
       "maxLength": 10000
     },
-    "link" : {
+    "link": {
       "description": "",
-      "type" : "string",
+      "type": "string",
       "maxLength": 10000
     },
-    "section" : {
+    "section": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     }
   },
-  "additionalProperties" : true,
-  "type" : "object",
-  "required" : [
+  "additionalProperties": true,
+  "type": "object",
+  "required": [
     "label",
     "link"
   ],
-  "self" : {
-    "vendor" : "com.torrelabs",
-    "name" : "HedaSharingOptionSelected",
-    "format" : "jsonschema",
-    "version" : "1-0-3"
+  "self": {
+    "vendor": "com.torrelabs",
+    "name": "HedaSharingOptionSelected",
+    "format": "jsonschema",
+    "version": "1-0-3"
   },
-  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
 }

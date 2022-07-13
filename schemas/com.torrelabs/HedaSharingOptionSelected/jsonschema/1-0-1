@@ -1,44 +1,50 @@
 {
-  "description" : "Schema for an share event",
-  "properties" : {
-    "subjectId" : {
+  "description": "Schema for an share event",
+  "properties": {
+    "subjectId": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "isTester" : {
+    "isTester": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "label" : {
+    "label": {
       "description": "",
-      "type" : "string",
+      "type": "string",
       "maxLength": 10000
     },
-    "link" : {
+    "link": {
       "description": "",
-      "type" : "string",
+      "type": "string",
       "maxLength": 10000
     },
-    "section" : {
+    "section": {
       "description": "",
-      "type" : "string",
+      "type": "string",
       "maxLength": 10000
     }
   },
-  "additionalProperties" : true,
-  "type" : "object",
-  "required" : [
+  "additionalProperties": true,
+  "type": "object",
+  "required": [
     "label",
     "link",
     "section"
   ],
-  "self" : {
-    "vendor" : "com.torrelabs",
-    "name" : "HedaSharingOptionSelected",
-    "format" : "jsonschema",
-    "version" : "1-0-1"
+  "self": {
+    "vendor": "com.torrelabs",
+    "name": "HedaSharingOptionSelected",
+    "format": "jsonschema",
+    "version": "1-0-1"
   },
-  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
 }

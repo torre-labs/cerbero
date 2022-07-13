@@ -1,102 +1,147 @@
 {
-  "description" : "Schema for an toggle edit genome professional and organizational",
-  "properties" : {
-    "contextPageTitle" : {
+  "description": "Schema for an toggle edit genome professional and organizational",
+  "properties": {
+    "contextPageTitle": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "email" : {
+    "email": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "eventName" : {
+    "eventName": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "href" : {
+    "href": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "isMobile" : {
+    "isMobile": {
       "description": "",
-      "type" : "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
-    "isTester" : {
+    "isTester": {
       "description": "",
-      "type" : "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
-    "origin" : {
+    "origin": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "pathname" : {
+    "pathname": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "port" : {
+    "port": {
       "description": "",
-      "type" : "integer",
+      "type": [
+        "integer",
+        "null"
+      ],
       "minimum": 0,
       "maximum": 10000000
     },
-    "protocol" : {
+    "protocol": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "publicId" : {
+    "publicId": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "search" : {
+    "search": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "sendAt" : {
+    "sendAt": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "subjectId" : {
+    "subjectId": {
       "description": "",
-      "type" : "integer",
+      "type": [
+        "integer",
+        "null"
+      ],
       "minimum": 0,
       "maximum": 10000000
     },
-    "userAgent" : {
+    "userAgent": {
       "description": "",
-      "type" : "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "maxLength": 10000
     },
-    "source" : {
+    "source": {
       "description": "",
-      "type" : "string",
+      "type": "string",
       "maxLength": 10000
     },
-    "value" : {
+    "value": {
       "description": "",
-      "type" : "boolean"
+      "type": "boolean"
     }
   },
-  "additionalProperties" : true,
-  "type" : "object",
-  "required" : [
+  "additionalProperties": true,
+  "type": "object",
+  "required": [
     "source",
     "value"
   ],
-  "self" : {
-    "vendor" : "com.torrelabs",
-    "name" : "HedaToggleEditGenome",
-    "format" : "jsonschema",
-    "version" : "1-0-1"
+  "self": {
+    "vendor": "com.torrelabs",
+    "name": "HedaToggleEditGenome",
+    "format": "jsonschema",
+    "version": "1-0-1"
   },
-  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
 }
