@@ -3,77 +3,77 @@
   "properties" : {
     "contextPageTitle" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "email" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "eventName" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "href" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "isMobile" : {
       "description": "",
-      "type" : "boolean"
+      "type" : ["boolean", "null"]
     },
     "isTester" : {
       "description": "",
-      "type" : "boolean"
+      "type" : ["boolean", "null"]
     },
     "origin" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "pathname" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "port" : {
       "description": "",
-      "type" : "integer",
+      "type" : ["integer", "null"],
       "minimum": 0,
       "maximum": 10000000
     },
     "protocol" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "publicId" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "search" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "sendAt" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "subjectId" : {
       "description": "",
-      "type" : "integer",
+      "type" : ["integer", "null"],
       "minimum": 0,
       "maximum": 10000000
     },
     "userAgent" : {
       "description": "",
-      "type" : "string",
+      "type" : ["string", "null"],
       "maxLength": 10000
     },
     "itemType" : {
@@ -89,7 +89,7 @@
     },
     "itemDescription" : {
       "description": "",
-      "type" : "integer",
+      "type" : ["integer", "null"],
       "minimum": 0,
       "maximum": 10000000
     }

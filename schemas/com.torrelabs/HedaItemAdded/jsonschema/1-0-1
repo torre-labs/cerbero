@@ -2,19 +2,31 @@
   "description" : "Schema for an item added on Genome Page",
   "properties" : {
     "subjectId" : {
-      "type" : "integer"
+      "description": "",
+      "type" : ["integer", "null"],
+      "minimum": 0,
+      "maximum": 10000000
     },
     "isTester" : {
-      "type" : "boolean"
+      "description": "",
+      "type" : ["boolean", "null"]
     },
     "itemType" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "amount" : {
-      "type" : "integer"
+      "description": "",
+      "type" : "integer",
+      "minimum": 0,
+      "maximum": 10000000
     },
     "itemDescription" : {
-      "type" : "integer"
+      "description": "",
+      "type" : ["integer", "null"],
+      "minimum": 0,
+      "maximum": 10000000
     }
   },
   "additionalProperties" : true,
