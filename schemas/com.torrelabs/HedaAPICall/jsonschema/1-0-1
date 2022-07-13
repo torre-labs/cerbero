@@ -2,9 +2,13 @@
   "description" : "Schema for an API Call event",
   "properties" : {
     "subjectId" : {
-      "type" : "integer"
+      "description": "",
+      "type" : "integer",
+      "minimum": 0,
+      "maximum": 10000000
     },
     "isTester" : {
+      "description": "",
       "type" : "boolean"
     },
     "action" : {

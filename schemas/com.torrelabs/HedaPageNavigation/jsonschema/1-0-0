@@ -2,9 +2,13 @@
   "description" : "Schema for an genome page navigation",
   "properties" : {
     "subjectId" : {
-      "type" : "integer"
+      "description": "",
+      "type" : "integer",
+      "minimum": 0,
+      "maximum": 10000000
     },
     "isTester" : {
+      "description": "",
       "type" : "boolean"
     },
     "referrer" : {

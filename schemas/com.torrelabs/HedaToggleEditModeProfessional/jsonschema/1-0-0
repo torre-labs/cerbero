@@ -17,6 +17,7 @@
       "maxLength": 10000
     },
     "value" : {
+      "description": "",
       "type" : "boolean"
     }
   },

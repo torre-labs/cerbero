@@ -22,9 +22,11 @@
       "maxLength": 10000
     },
     "isMobile" : {
+      "description": "",
       "type" : "boolean"
     },
     "isTester" : {
+      "description": "",
       "type" : "boolean"
     },
     "origin" : {
@@ -63,7 +65,10 @@
       "maxLength": 10000
     },
     "subjectId" : {
-      "type" : "integer"
+      "description": "",
+      "type" : "integer",
+      "minimum": 0,
+      "maximum": 10000000
     },
     "userAgent" : {
       "description": "",
@@ -76,6 +81,7 @@
       "maxLength": 10000
     },
     "value" : {
+      "description": "",
       "type" : "boolean"
     }
   },
