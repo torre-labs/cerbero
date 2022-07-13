@@ -1,0 +1,44 @@
+{
+  "description" : "Schema for a location entity",
+  "properties" : {
+    "name" : {
+      "description" : "Name identifier of location",
+      "type" : "string",
+      "maxLength" : 120
+    },
+    "latitude" : {
+      "description" : "Latitude of location",
+      "type" : "number",
+      "minimum" : 0,
+      "maximum" : 200
+    },
+    "longitude" : {
+      "description" : "Longitude of location",
+      "type" : "number",
+      "minimum" : 0,
+      "maximum" : 100
+    },
+    "timezone" : {
+      "description" : "Phone of registered user",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 120
+    }
+  },
+  "additionalProperties" : false,
+  "type" : "object",
+  "required" : [
+    "latitude",
+    "longitude",
+    "name"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "location",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

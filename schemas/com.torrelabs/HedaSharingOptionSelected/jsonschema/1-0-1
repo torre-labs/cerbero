@@ -1,0 +1,34 @@
+{
+  "description" : "Schema for an share event",
+  "properties" : {
+    "subjectId" : {
+      "type" : "string"
+    },
+    "isTester" : {
+      "type" : "string"
+    },
+    "label" : {
+      "type" : "string"
+    },
+    "link" : {
+      "type" : "string"
+    },
+    "section" : {
+      "type" : "string"
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "label",
+    "link",
+    "section"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "HedaSharingOptionSelected",
+    "format" : "jsonschema",
+    "version" : "1-0-1"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

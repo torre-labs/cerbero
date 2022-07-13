@@ -1,0 +1,72 @@
+{
+  "description" : "Schema for an item added on Organziations Genome Page",
+  "properties" : {
+    "contextPageTitle" : {
+      "type" : "string"
+    },
+    "email" : {
+      "type" : "string"
+    },
+    "eventName" : {
+      "type" : "string"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "isMobile" : {
+      "type" : "boolean"
+    },
+    "isTester" : {
+      "type" : "boolean"
+    },
+    "origin" : {
+      "type" : "string"
+    },
+    "pathname" : {
+      "type" : "string"
+    },
+    "port" : {
+      "type" : "string"
+    },
+    "protocol" : {
+      "type" : "string"
+    },
+    "publicId" : {
+      "type" : "string"
+    },
+    "search" : {
+      "type" : "string"
+    },
+    "sendAt" : {
+      "type" : "string"
+    },
+    "subjectId" : {
+      "type" : "integer"
+    },
+    "userAgent" : {
+      "type" : "string"
+    },
+    "itemType" : {
+      "type" : "string"
+    },
+    "amount" : {
+      "type" : "integer"
+    },
+    "itemDescription" : {
+      "type" : "string"
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "itemType",
+    "amount"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "OrganziationsItemAdded",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

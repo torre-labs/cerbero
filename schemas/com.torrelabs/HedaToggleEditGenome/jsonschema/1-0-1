@@ -1,0 +1,69 @@
+{
+  "description" : "Schema for an toggle edit genome professional and organizational",
+  "properties" : {
+    "contextPageTitle" : {
+      "type" : "string"
+    },
+    "email" : {
+      "type" : "string"
+    },
+    "eventName" : {
+      "type" : "string"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "isMobile" : {
+      "type" : "boolean"
+    },
+    "isTester" : {
+      "type" : "boolean"
+    },
+    "origin" : {
+      "type" : "string"
+    },
+    "pathname" : {
+      "type" : "string"
+    },
+    "port" : {
+      "type" : "integer"
+    },
+    "protocol" : {
+      "type" : "string"
+    },
+    "publicId" : {
+      "type" : "string"
+    },
+    "search" : {
+      "type" : "string"
+    },
+    "sendAt" : {
+      "type" : "string"
+    },
+    "subjectId" : {
+      "type" : "integer"
+    },
+    "userAgent" : {
+      "type" : "string"
+    },
+    "source" : {
+      "type" : "string"
+    },
+    "value" : {
+      "type" : "boolean"
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "source",
+    "value"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "HedaToggleEditGenome",
+    "format" : "jsonschema",
+    "version" : "1-0-1"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

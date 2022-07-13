@@ -1,0 +1,29 @@
+{
+  "description" : "Schema for an genome page navigation",
+  "properties" : {
+    "subjectId" : {
+      "type" : "integer"
+    },
+    "isTester" : {
+      "type" : "boolean"
+    },
+    "referrer" : {
+      "type" : "string"
+    },
+    "to" : {
+      "type" : "string"
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "to"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "HedaPageNavigation",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}
