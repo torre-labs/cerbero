@@ -2,16 +2,24 @@
   "description" : "Schema for an API Call event",
   "properties" : {
     "contextPageTitle" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "email" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "eventName" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "href" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "isMobile" : {
       "type" : "boolean"
@@ -20,40 +28,62 @@
       "type" : "boolean"
     },
     "origin" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "pathname" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "port" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "protocol" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "publicId" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "search" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "sendAt" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "subjectId" : {
       "type" : "integer"
     },
     "userAgent" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "label" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "link" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "section" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     }
   },
   "additionalProperties" : true,

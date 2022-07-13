@@ -2,19 +2,29 @@
   "description" : "Schema for an API Call event",
   "properties" : {
     "subjectId" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "isTester" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "action" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "service" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "item" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     }
   },
   "additionalProperties" : true,

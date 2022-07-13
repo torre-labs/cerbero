@@ -2,19 +2,29 @@
   "description" : "Schema for an share event",
   "properties" : {
     "subjectId" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "isTester" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "label" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "link" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "section" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     }
   },
   "additionalProperties" : true,

@@ -8,10 +8,14 @@
       "type" : "boolean"
     },
     "referrer" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "to" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     }
   },
   "additionalProperties" : true,

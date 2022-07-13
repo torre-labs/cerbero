@@ -2,13 +2,19 @@
   "description" : "Schema for an toggle edit genome professional and organizational",
   "properties" : {
     "subjectId" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "isTester" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "source" : {
-      "type" : "string"
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
     },
     "value" : {
       "type" : "boolean"
