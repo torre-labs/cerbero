@@ -1,0 +1,45 @@
+{
+  "description" : "Schema for an item added on Genome Page",
+  "properties" : {
+    "subjectId" : {
+      "description": "",
+      "type" : ["integer", "null"],
+      "minimum": 0,
+      "maximum": 10000000
+    },
+    "isTester" : {
+      "description": "",
+      "type" : ["boolean", "null"]
+    },
+    "itemType" : {
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
+    },
+    "amount" : {
+      "description": "",
+      "type" : "integer",
+      "minimum": 0,
+      "maximum": 10000000
+    },
+    "itemDescription" : {
+      "description": "",
+      "type" : ["integer", "null"],
+      "minimum": 0,
+      "maximum": 10000000
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "itemType",
+    "amount"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "HedaItemAdded",
+    "format" : "jsonschema",
+    "version" : "1-0-1"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

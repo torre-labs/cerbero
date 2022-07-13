@@ -1,0 +1,29 @@
+{
+  "description" : "Schema for a scroll click event",
+  "properties" : {
+    "percentage" : {
+      "description" : "The percentage user scrolled",
+      "type" : "integer",
+      "minimum" : 0,
+      "maximum" : 100
+    },
+    "url" : {
+      "description" : "Path url where event was tracked",
+      "type" : "string",
+      "maxLength" : 420
+    }
+  },
+  "additionalProperties" : false,
+  "type" : "object",
+  "required" : [
+    "percentage",
+    "url"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "scroll",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

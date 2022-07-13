@@ -1,0 +1,156 @@
+{
+  "description": "Schema for an item added on Genome Page",
+  "properties": {
+    "contextPageTitle": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "email": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "eventName": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "href": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "isMobile": {
+      "description": "",
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "isTester": {
+      "description": "",
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "origin": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "pathname": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "port": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "protocol": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "publicId": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "search": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "sendAt": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "subjectId": {
+      "description": "",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 10000000
+    },
+    "userAgent": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "itemType": {
+      "description": "",
+      "type": "string",
+      "maxLength": 10000
+    },
+    "amount": {
+      "description": "",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000000
+    },
+    "itemDescription": {
+      "description": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    }
+  },
+  "additionalProperties": true,
+  "type": "object",
+  "required": [
+    "itemType",
+    "amount"
+  ],
+  "self": {
+    "vendor": "com.torrelabs",
+    "name": "HedaItemAdded",
+    "format": "jsonschema",
+    "version": "1-0-4"
+  },
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

@@ -1,0 +1,54 @@
+{
+  "description" : "Schema for tracking the signal between users and genome types",
+  "properties" : {
+    "signalType" : {
+      "description" : "Type of the signal: signal, unsignal, signal-back",
+      "type" : "string",
+      "maxLength" : 80
+    },
+    "targetGenomeType" : {
+      "description" : "Type of the signaled genome (person/team)",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 80
+    },
+    "sourceGenomeType" : {
+      "description" : "Type of the signaled genome (person/team)",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 80
+    },
+    "sourceGgId" : {
+      "description" : "Subject id for the user who sent the signal",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 80
+    },
+    "targetGgId" : {
+      "description" : "Subject id for the user who got the signal",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 80
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "signalType"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "Signal",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

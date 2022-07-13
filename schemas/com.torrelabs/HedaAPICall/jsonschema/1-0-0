@@ -1,0 +1,42 @@
+{
+  "description" : "Schema for an API Call event",
+  "properties" : {
+    "subjectId" : {
+      "description": "",
+      "type" : "string",
+      "maxLength": 10000
+    },
+    "isTester" : {
+      "description": "",
+      "type" : ["string", "null"],
+      "maxLength": 10000
+    },
+    "action" : {
+      "description": "",
+      "type" : ["string", "null"],
+      "maxLength": 10000
+    },
+    "service" : {
+      "description": "",
+      "type" : ["string", "null"],
+      "maxLength": 10000
+    },
+    "item" : {
+      "description": "",
+      "type" : ["string", "null"],
+      "maxLength": 10000
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "subjectId"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "HedaAPICall",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

@@ -1,0 +1,48 @@
+{
+  "description" : "Schema for a referrer link hit event",
+  "properties" : {
+    "token" : {
+      "description" : "Generated token in Messo links db",
+      "type" : "string",
+      "maxLength" : 210
+    },
+    "referrerDeviceId" : {
+      "description" : "Device id of the referrer user (the one who generates the link)",
+      "type" : "string",
+      "maxLength" : 210
+    },
+    "referralDeviceId" : {
+      "description" : "Device id of the referral user (the one who hits the link)",
+      "type" : "string",
+      "maxLength" : 210
+    },
+    "destination" : {
+      "description" : "Final URL",
+      "type" : "string",
+      "maxLength" : 420
+    },
+    "typeOfPage" : {
+      "description" : "Type of destination (Genome page, Job post page, ...)",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 210
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "token",
+    "referrerDeviceId",
+    "referralDeviceId",
+    "destination"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "ReferrerLinkHit",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

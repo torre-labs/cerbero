@@ -1,0 +1,68 @@
+{
+  "description" : "Schema for common platform context",
+  "properties" : {
+    "interaction" : {
+      "description" : "Interaction is used to provide more info. about which was the action user was doing when event was originated",
+      "type" : "string",
+      "maxLength" : 120
+    },
+    "pageType" : {
+      "description" : "pageType is used to provide more info. about repository and navigation context from which event was originated",
+      "type" : "string",
+      "maxLength" : 120
+    },
+    "section" : {
+      "description" : "Section is used to provide more info. about UI component from which event was originated",
+      "type" : "string",
+      "maxLength" : 120
+    },
+    "flow" : {
+      "description" : "Flow queryParam if exists",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 80
+    },
+    "source" : {
+      "description" : "source queryParam if exists",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 80
+    },
+    "onboarding" : {
+      "description" : "True if user was folling one onboarding flow",
+      "type" : [
+        "boolean",
+        "null"
+      ]
+    },
+    "locale" : {
+      "description" : "Locale for the Opportunity job post (es/en)",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 12
+    },
+    "next" : {
+      "description" : "Next query param if it's exists",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 420
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "PlatformContext",
+    "format" : "jsonschema",
+    "version" : "1-0-1"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

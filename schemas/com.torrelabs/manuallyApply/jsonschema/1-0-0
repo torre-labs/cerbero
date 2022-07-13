@@ -1,0 +1,35 @@
+{
+  "description" : "Schema for a manually-apply click event",
+  "properties" : {
+    "timestamp" : {
+      "description" : "timestamp when user clicked on apply-on-behalf option",
+      "type" : "string",
+      "maxLength" : 80
+    },
+    "url" : {
+      "description" : "url where event was tracked",
+      "type" : "string",
+      "maxLength" : 420
+    },
+    "test" : {
+      "description" : "True when event was tracked in a test enviroment",
+      "type" : [
+        "boolean",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "timestamp",
+    "url"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "manuallyApply",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

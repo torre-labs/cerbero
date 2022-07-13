@@ -1,0 +1,67 @@
+{
+  "description" : "Schema for Opportunity contexts in all related events",
+  "properties" : {
+    "genomeType" : {
+      "description" : "Type of the unsignaled genome (person/team)",
+      "type" : "string",
+      "maxLength" : 80
+    },
+    "sourceUserId" : {
+      "description" : "Subject id for the user who sent the unsignal",
+      "type" : "string",
+      "maxLength" : 80
+    },
+    "targetUserId" : {
+      "description" : "Subject id for the user who got the unsignal",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 80
+    },
+    "preference" : {
+      "description" : "True if unsignal comes from preferences onboarding flow; false otherwise",
+      "type" : [
+        "boolean",
+        "null"
+      ]
+    },
+    "flow" : {
+      "description" : "Flow queryParam if exists",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 80
+    },
+    "source" : {
+      "description" : "Flow queryParam if exists",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 80
+    },
+    "onboarding" : {
+      "description" : "Type of agreement for the Opportunity",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 120
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "required" : [
+    "genomeType",
+    "sourceUserId"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "Unsignaled",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

@@ -1,0 +1,70 @@
+{
+  "description" : "Schema for an user entity",
+  "properties" : {
+    "subjectId" : {
+      "description" : "User shared id",
+      "type" : [
+        "integer",
+        "null"
+      ],
+      "minimum" : 0,
+      "maximum" : 10000000000
+    },
+    "name" : {
+      "description" : "First and last name of user",
+      "type" : "string",
+      "maxLength" : 120
+    },
+    "email" : {
+      "description" : "Email of registered user",
+      "type" : "string",
+      "maxLength" : 120
+    },
+    "phone" : {
+      "description" : "Phone of registered user",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 120
+    },
+    "weight" : {
+      "description" : "Torre network Weight of user",
+      "type" : "number",
+      "maximum" : 100000000000.0,
+      "minimum" : 0
+    },
+    "conciergeSubscriber" : {
+      "description" : "True if user has a valid subscription to Torre Concierge service",
+      "type" : [
+        "boolean",
+        "null"
+      ]
+    },
+    "verified" : {
+      "description" : "Validate if user is a verified user or not",
+      "type" : "boolean"
+    },
+    "locale" : {
+      "description" : "Default locale language (en/es) of user",
+      "type" : "string",
+      "maxLength" : 12
+    }
+  },
+  "additionalProperties" : false,
+  "type" : "object",
+  "required" : [
+    "name",
+    "email",
+    "weight",
+    "verified",
+    "locale"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "user",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

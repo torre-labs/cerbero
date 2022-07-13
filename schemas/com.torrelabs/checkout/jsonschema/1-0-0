@@ -1,0 +1,41 @@
+{
+  "description" : "Schema for checkout-button click event",
+  "properties" : {
+    "timestamp" : {
+      "description" : "timestamp when user clicked on checkout redirect",
+      "type" : "string",
+      "maxLength" : 80
+    },
+    "service" : {
+      "description" : "Service from which the checkout will be processed",
+      "type" : "string",
+      "maxLength" : 120
+    },
+    "url" : {
+      "description" : "url where event was tracked",
+      "type" : "string",
+      "maxLength" : 420
+    },
+    "test" : {
+      "description" : "True when event was tracked in a test enviroment",
+      "type" : [
+        "boolean",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties" : false,
+  "type" : "object",
+  "required" : [
+    "url",
+    "service",
+    "timestamp"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "checkout",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

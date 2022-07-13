@@ -1,0 +1,35 @@
+{
+  "description" : "Schema for an opportunity entity",
+  "properties" : {
+    "opportunity_id" : {
+      "description" : "Number format id of opportunity",
+      "type" : "integer",
+      "minimum" : 0,
+      "maximum" : 10000000000
+    },
+    "objective" : {
+      "description" : "Name of opportunity",
+      "type" : "string",
+      "maxLength" : 120
+    },
+    "created" : {
+      "description" : "Date when opportunity was created",
+      "type" : "string",
+      "maxLength" : 120
+    }
+  },
+  "additionalProperties" : false,
+  "type" : "object",
+  "required" : [
+    "opportunity_id",
+    "objective",
+    "created"
+  ],
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "opportunity",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

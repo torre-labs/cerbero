@@ -1,0 +1,46 @@
+{
+  "description" : "Schema for tracking the action performed of the job post card in search result",
+  "properties" : {
+    "userGgId" : {
+      "description" : "GgId of the user that interacted with the job post view in search",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 50
+    },
+    "elementName" : {
+      "description" : "Name of the element that was interacted",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 200
+    },
+    "elementType" : {
+      "description" : "Type of the element that was interacted",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 200
+    },
+    "elementValue" : {
+      "description" : "Value of the element that was interacted",
+      "type" : [
+        "string",
+        "null"
+      ],
+      "maxLength" : 200
+    }
+  },
+  "additionalProperties" : true,
+  "type" : "object",
+  "self" : {
+    "vendor" : "com.torrelabs",
+    "name" : "OpportunityResultActionPerformed",
+    "format" : "jsonschema",
+    "version" : "1-0-0"
+  },
+  "$schema" : "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#"
+}

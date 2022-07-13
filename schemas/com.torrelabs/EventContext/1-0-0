@@ -1,0 +1,61 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "self": {
+    "vendor": "com.torrelabs",
+    "name": "EventContext",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  "description": "Schema for all event metadata context",
+  "properties": {
+    "userGgId": {
+      "description": "value for currentUser.ggId it exists",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "href": {
+      "description": "value for document.location.href if it exists",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "origin": {
+      "description": "value for document.location.origin if it exists",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "protocol": {
+      "description": "value for document.location.protocol if it exists",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    },
+    "isMobile": {
+      "description": "value for WindowWrapper.isMobile() if it exists",
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "sendAt": {
+      "description": "value for new Date().toISOString() if it exists",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10000
+    }
+  },
+  "additionalProperties": false,
+  "type": "object"
+}
